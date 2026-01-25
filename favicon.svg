@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Navy circular background -->
+  <circle cx="16" cy="16" r="15" fill="#1a365d"/>
+  
+  <!-- Orange water drop shape that forms a "D" -->
+  <path d="M16 5 C16 5 8 14 8 19 C8 23.5 11.5 27 16 27 C20.5 27 24 23.5 24 19 C24 14 16 5 16 5 Z" fill="#f97316"/>
+  
+  <!-- Navy inner curve to create "D" effect -->
+  <path d="M14 12 L14 22 C14 22 18 22 18 17 C18 12 14 12 14 12 Z" fill="#1a365d"/>
+</svg>
