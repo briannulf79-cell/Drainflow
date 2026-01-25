@@ -5,18 +5,18 @@
 
 /* CSS Variables */
 :root {
-    --color-primary: #1a2744;
-    --color-primary-dark: #0f1829;
-    --color-primary-light: #2a3d5f;
-    --color-accent: #e85d04;
-    --color-accent-light: #f48c06;
-    --color-accent-glow: rgba(232, 93, 4, 0.3);
+    --color-primary: #0055d4;
+    --color-primary-dark: #003d99;
+    --color-primary-light: #1a6aff;
+    --color-accent: #39ff14;
+    --color-accent-light: #66ff44;
+    --color-accent-glow: rgba(57, 255, 20, 0.35);
     --color-surface: #f8f9fa;
     --color-surface-dark: #e9ecef;
     --color-text: #212529;
     --color-text-muted: #6c757d;
     --color-white: #ffffff;
-    --color-success: #28a745;
+    --color-success: #39ff14;
     
     --font-display: 'Bebas Neue', sans-serif;
     --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -131,8 +131,9 @@ h3 {
 
 .btn-primary {
     background: var(--color-accent);
-    color: var(--color-white);
+    color: #003d00;
     border-color: var(--color-accent);
+    font-weight: 700;
 }
 
 .btn-primary:hover {
@@ -140,6 +141,7 @@ h3 {
     border-color: var(--color-accent-light);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px var(--color-accent-glow);
+    color: #003d00;
 }
 
 .btn-secondary {
@@ -540,8 +542,8 @@ h1 {
     justify-content: center;
     width: 28px;
     height: 28px;
-    background: rgba(232, 93, 4, 0.1);
-    color: var(--color-accent);
+    background: rgba(57, 255, 20, 0.15);
+    color: var(--color-primary);
     border-radius: 50%;
     font-size: 0.875rem;
 }
@@ -780,14 +782,14 @@ h1 {
 
 .cta-card-content .btn-primary {
     background: var(--color-white);
-    color: var(--color-accent);
+    color: var(--color-primary);
     border-color: var(--color-white);
 }
 
 .cta-card-content .btn-primary:hover {
-    background: var(--color-primary);
+    background: var(--color-primary-dark);
     color: var(--color-white);
-    border-color: var(--color-primary);
+    border-color: var(--color-primary-dark);
 }
 
 /* ========================================
