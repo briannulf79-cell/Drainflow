@@ -168,3 +168,4 @@ If your friend needs help maintaining the site later:
 - Netlify has tutorials at [docs.netlify.com](https://docs.netlify.com)
 - Or they can hire a local web developer for updates
 
+
