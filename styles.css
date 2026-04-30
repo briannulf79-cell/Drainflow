@@ -5,18 +5,25 @@
 
 /* CSS Variables */
 :root {
-    --color-primary: #0055d4;
-    --color-primary-dark: #003d99;
-    --color-primary-light: #1a6aff;
-    --color-accent: #39ff14;
-    --color-accent-light: #66ff44;
-    --color-accent-glow: rgba(57, 255, 20, 0.35);
-    --color-surface: #f8f9fa;
-    --color-surface-dark: #e9ecef;
-    --color-text: #212529;
-    --color-text-muted: #6c757d;
+    /* Drain Warrior Mascot Colors - Green/Blue Armor Theme */
+    --color-primary: #1e90ff;        /* Bright blue - armor base */
+    --color-primary-dark: #0066cc;   /* Deep blue - shadows */
+    --color-primary-light: #4db8ff;  /* Light blue - highlights */
+    --color-accent: #39ff14;         /* Neon green - energy glow */
+    --color-accent-dark: #22cc00;    /* Darker green - depth */
+    --color-accent-light: #66ff44;   /* Bright green - highlights */
+    --color-accent-glow: rgba(57, 255, 20, 0.4);
+    --color-shield-blue: #0047AB;    /* Shield center blue */
+    --color-shield-green: #228B22;   /* Shield pipe green */
+    --color-metal: #4a5568;          /* Metallic silver/gray */
+    --color-metal-light: #718096;    /* Lighter metal */
+    --color-sewer-dark: #1a202c;     /* Dark sewer background */
+    --color-sewer-bg: #2d3748;       /* Sewer brick/pipe bg */
+    --color-surface: #f0f4f8;        /* Light surface */
+    --color-surface-dark: #e2e8f0;
+    --color-text: #1a202c;
+    --color-text-muted: #718096;
     --color-white: #ffffff;
-    --color-success: #39ff14;
     
     --font-display: 'Bebas Neue', sans-serif;
     --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -341,7 +348,7 @@ h3 {
     position: absolute;
     inset: 0;
     background: 
-        linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 50%, #0a1018 100%);
+        linear-gradient(135deg, var(--color-sewer-dark) 0%, var(--color-sewer-bg) 40%, var(--color-primary-dark) 100%);
     z-index: -2;
 }
 
@@ -350,16 +357,20 @@ h3 {
     position: absolute;
     inset: 0;
     background-image: 
-        radial-gradient(circle at 20% 80%, var(--color-accent-glow) 0%, transparent 40%),
-        radial-gradient(circle at 80% 20%, rgba(42, 61, 95, 0.5) 0%, transparent 40%);
+        radial-gradient(circle at 30% 70%, var(--color-accent-glow) 0%, transparent 50%),
+        radial-gradient(circle at 70% 30%, rgba(30, 144, 255, 0.3) 0%, transparent 50%),
+        linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
     z-index: -1;
 }
 
+/* Industrial pipe pattern overlay */
 .hero-bg::after {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: 
+        repeating-linear-gradient(90deg, transparent 0px, transparent 2px, rgba(255, 255, 255, 0.02) 2px, rgba(255, 255, 255, 0.02) 4px),
+        repeating-linear-gradient(0deg, transparent 0px, transparent 2px, rgba(255, 255, 255, 0.02) 2px, rgba(255, 255, 255, 0.02) 4px);
     z-index: 0;
 }
 
@@ -484,13 +495,27 @@ h1 {
 
 .service-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 
+        var(--shadow-lg),
+        0 0 30px rgba(57, 255, 20, 0.2);
     border-color: var(--color-accent);
 }
 
+.service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 20px var(--color-accent-glow);
+}
+}
+
 .service-icon {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
+    display: inline-block;
+    padding: 16px;
+    background: linear-gradient(135deg, rgba(57, 255, 20, 0.1) 0%, rgba(30, 144, 255, 0.1) 100%);
+    border-radius: var(--radius-md);
+    border: 2px solid rgba(57, 255, 20, 0.3);
+    transition: all var(--transition-base);
 }
 
 .service-card h3 {
@@ -548,41 +573,79 @@ h1 {
     font-size: 0.875rem;
 }
 
+/* About Image - Mascot Shield Design */
 .about-image-placeholder {
     aspect-ratio: 4/3;
     background: 
-        linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+        radial-gradient(ellipse at center, var(--color-shield-blue) 0%, var(--color-primary-dark) 70%);
     border-radius: var(--radius-lg);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
+    border: 4px solid var(--color-metal);
+    box-shadow: 
+        0 0 30px rgba(57, 255, 20, 0.3),
+        inset 0 0 60px rgba(0, 0, 0, 0.5);
 }
 
 .about-image-placeholder::before {
     content: '';
     position: absolute;
+    inset: 8px;
+    border: 3px solid var(--color-accent);
+    border-radius: calc(var(--radius-lg) - 8px);
+    opacity: 0.6;
+    box-shadow: 0 0 20px var(--color-accent-glow);
+}
+
+/* Decorative pipe border corners */
+.about-image-placeholder::after {
+    content: '';
+    position: absolute;
     inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M0 20h20v20H0V20zm20-20h20v20H20V0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(57, 255, 20, 0.2) 0%, transparent 30%),
+        radial-gradient(circle at 80% 20%, rgba(30, 144, 255, 0.2) 0%, transparent 30%);
+    pointer-events: none;
 }
 
 .placeholder-content {
     text-align: center;
     color: var(--color-white);
     z-index: 1;
+    padding: 24px;
 }
 
 .placeholder-icon {
-    font-size: 4rem;
+    font-size: 5rem;
     display: block;
     margin-bottom: 16px;
+    filter: drop-shadow(0 0 20px var(--color-accent-glow));
 }
 
 .placeholder-text {
     font-family: var(--font-display);
-    font-size: 1.5rem;
-    letter-spacing: 0.02em;
+    font-size: 1.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
+}
+
+/* Mascot badge for the about section */
+.mascot-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+    color: var(--color-sewer-dark);
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+    box-shadow: 0 0 15px var(--color-accent-glow);
 }
 
 /* ========================================
