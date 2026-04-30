@@ -212,6 +212,7 @@ h3 {
     width: auto;
     transition: all var(--transition-base);
     border-radius: 8px;
+    filter: drop-shadow(0 0 8px rgba(57, 255, 20, 0.3));
 }
 
 .header.scrolled .logo-img {
@@ -350,27 +351,28 @@ h3 {
     background: 
         linear-gradient(135deg, var(--color-sewer-dark) 0%, var(--color-sewer-bg) 40%, var(--color-primary-dark) 100%);
     z-index: -2;
+    overflow: hidden;
 }
 
-.hero-bg::before {
-    content: '';
+.hero-bg-image {
     position: absolute;
     inset: 0;
-    background-image: 
-        radial-gradient(circle at 30% 70%, var(--color-accent-glow) 0%, transparent 50%),
-        radial-gradient(circle at 70% 30%, rgba(30, 144, 255, 0.3) 0%, transparent 50%),
-        linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.35;
+    filter: contrast(1.1) saturate(1.2);
     z-index: -1;
 }
 
-/* Industrial pipe pattern overlay */
-.hero-bg::after {
-    content: '';
+.hero-overlay {
     position: absolute;
     inset: 0;
-    background-image: 
-        repeating-linear-gradient(90deg, transparent 0px, transparent 2px, rgba(255, 255, 255, 0.02) 2px, rgba(255, 255, 255, 0.02) 4px),
-        repeating-linear-gradient(0deg, transparent 0px, transparent 2px, rgba(255, 255, 255, 0.02) 2px, rgba(255, 255, 255, 0.02) 4px);
+    background: 
+        linear-gradient(180deg, rgba(26, 32, 44, 0.7) 0%, rgba(26, 32, 44, 0.5) 50%, rgba(26, 32, 44, 0.9) 100%),
+        radial-gradient(circle at 30% 70%, rgba(57, 255, 20, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 70% 30%, rgba(30, 144, 255, 0.2) 0%, transparent 50%);
     z-index: 0;
 }
 
@@ -573,79 +575,47 @@ h1 {
     font-size: 0.875rem;
 }
 
-/* About Image - Mascot Shield Design */
-.about-image-placeholder {
-    aspect-ratio: 4/3;
-    background: 
-        radial-gradient(ellipse at center, var(--color-shield-blue) 0%, var(--color-primary-dark) 70%);
-    border-radius: var(--radius-lg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* About Mascot Image - Integrated Design */
+.about-image {
     position: relative;
-    overflow: hidden;
+}
+
+.about-mascot-img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
     border: 4px solid var(--color-metal);
     box-shadow: 
-        0 0 30px rgba(57, 255, 20, 0.3),
-        inset 0 0 60px rgba(0, 0, 0, 0.5);
+        0 0 40px rgba(57, 255, 20, 0.3),
+        inset 0 0 60px rgba(0, 0, 0, 0.4);
+    filter: contrast(1.05) saturate(1.1);
+    transition: all var(--transition-base);
 }
 
-.about-image-placeholder::before {
-    content: '';
+.about-mascot-img:hover {
+    transform: scale(1.02);
+    box-shadow: 
+        0 0 60px rgba(57, 255, 20, 0.4),
+        inset 0 0 60px rgba(0, 0, 0, 0.4);
+}
+
+/* Decorative badge overlay for about section */
+.about-image::before {
+    content: '🛡️ Drain Warriors';
     position: absolute;
-    inset: 8px;
-    border: 3px solid var(--color-accent);
-    border-radius: calc(var(--radius-lg) - 8px);
-    opacity: 0.6;
-    box-shadow: 0 0 20px var(--color-accent-glow);
-}
-
-/* Decorative pipe border corners */
-.about-image-placeholder::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: 
-        radial-gradient(circle at 20% 80%, rgba(57, 255, 20, 0.2) 0%, transparent 30%),
-        radial-gradient(circle at 80% 20%, rgba(30, 144, 255, 0.2) 0%, transparent 30%);
-    pointer-events: none;
-}
-
-.placeholder-content {
-    text-align: center;
-    color: var(--color-white);
-    z-index: 1;
-    padding: 24px;
-}
-
-.placeholder-icon {
-    font-size: 5rem;
-    display: block;
-    margin-bottom: 16px;
-    filter: drop-shadow(0 0 20px var(--color-accent-glow));
-}
-
-.placeholder-text {
-    font-family: var(--font-display);
-    font-size: 1.75rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    text-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
-}
-
-/* Mascot badge for the about section */
-.mascot-badge {
-    display: inline-block;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
     color: var(--color-sewer-dark);
-    padding: 8px 16px;
+    padding: 8px 20px;
     border-radius: var(--radius-full);
     font-weight: 700;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-bottom: 12px;
-    box-shadow: 0 0 15px var(--color-accent-glow);
+    box-shadow: 0 0 20px var(--color-accent-glow);
+    z-index: 2;
 }
 
 /* ========================================
@@ -853,6 +823,26 @@ h1 {
     background: var(--color-primary-dark);
     color: var(--color-white);
     border-color: var(--color-primary-dark);
+}
+
+/* Contact Mascot Image */
+.contact-mascot-img {
+    width: 100%;
+    max-width: 280px;
+    margin: 24px auto 0;
+    display: block;
+    border-radius: var(--radius-md);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
 }
 
 /* ========================================
