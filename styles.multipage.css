@@ -218,6 +218,17 @@
     max-width: 760px;
     margin: 0 auto;
 }
+/* Blog article page hero (long titles) */
+.page-hero.article-hero h1 {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.15;
+}
+.page-hero.article-hero .page-hero-badge {
+    margin-bottom: 24px;
+}
 .article-body h3 { margin: 28px 0 12px; }
 .article-body p  { margin-bottom: 16px; color: var(--color-text); }
 .article-body ul { margin: 0 0 20px 24px; }
