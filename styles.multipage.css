@@ -85,6 +85,14 @@
 .gallery-item {
     text-align: left;
 }
+/* Gallery photos are portrait (phone shots) — fit the tile to the photo
+   instead of center-cropping heads off in a landscape box. */
+.gallery-item .card-slot {
+    aspect-ratio: 3 / 4;
+}
+.gallery-item .card-slot img {
+    object-position: center 30%;
+}
 .gallery-item .gallery-caption {
     margin-top: 12px;
     color: var(--color-text-muted);
