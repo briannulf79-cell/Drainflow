@@ -2,20 +2,50 @@
 
 A professional, mobile-responsive website for Drain Flow Sewer and Plumbing - a family-run plumbing business in Oak Forest, IL.
 
+**Multi-page build (Aug 2026).** 7 pages sharing one nav/footer + one branding theme:
+
+| Route | Page |
+|-------|------|
+| `index.html` | Home |
+| `services.html` | Services |
+| `about.html` | About |
+| `media.html` | Media — YouTube videos + job & equipment gallery |
+| `blog.html` | Blog — educational articles |
+| `reviews.html` | Reviews |
+| `contact.html` | Contact |
+
 ## 🚀 Quick Start
 
-This is a simple static website (HTML + CSS) with no build process required. To view locally:
+**To edit the site**, edit the *source* files, NOT the built HTML in the repo root:
 
-1. Open `index.html` in any web browser
-2. Or use a local server like VS Code's Live Server extension
+- `_partials/head.html` — shared header + nav (edit once, every page updates)
+- `_partials/foot.html` — shared footer + footer script
+- `_pages/*.html` — each page's body content
+- `styles.css` — original theme · `styles.multipage.css` — media/blog/interior styles
+
+**Rebuild after any edit:**
+
+```bash
+python3 build.py
+```
+
+This wraps `_pages/*.html` bodies in the shared head/foot and writes the final
+`*.html` files to the repo root — so header/footer/nav only ever need to be
+changed in ONE place and branding stays consistent across every page. It's a
+plain static site with no other build step; just ship the repo root.
+
+To add a new page: create `_pages/<name>.html` (start with the `{{ title: ... }}
+{{ desc: ... }}` header lines), add a nav link in `_partials/head.html`, re-run
+`build.py`.
+
+## 🔧 Content Rambo Still Needs to Supply
+
+- **Media page:** his real YouTube channel/thumbnail links (currently a placeholder
+  `@drainflow` handle) and real job + equipment photos (placeholder tiles are in place).
+- **Blog page:** the article bodies (cards are starter education topics he can
+  edit or replace).
 
 ## 📁 Files
-
-```
-├── index.html    # Main website page
-├── styles.css    # All styling
-└── README.md     # This file
-```
 
 ## 🌐 Deployment Options (Ranked by Cost & Ease)
 
