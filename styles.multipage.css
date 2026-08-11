@@ -58,6 +58,8 @@
     align-items: center;
     justify-content: center;
     min-height: 180px;
+    width: 100%;
+    max-width: 100%;
 }
 .card-slot img {
     width: 100%;
@@ -236,6 +238,7 @@
     align-items: center;
     margin-bottom: 64px;
 }
+.split-text, .split-image { min-width: 0; width: 100%; }
 .split-text p { margin-bottom: 16px; color: var(--color-text); }
 .split-image .card-slot { min-height: 320px; }
 
