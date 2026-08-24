@@ -1,0 +1,165 @@
+{
+  "title": "Drain Flow Sewer & Plumbing — SEO & GEO Readiness Report",
+  "author": "Entrepreneur Avenues · Digital Visibility",
+  "subject": "Website & Local-Search Visibility Baseline and Optimization Report",
+  "page_header": "Drain Flow Sewer & Plumbing — Visibility Report",
+  "page_footer": "Confidential · Prepared August 23, 2026",
+  "elements": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Digital Visibility Readiness Report"
+    },
+    {
+      "type": "paragraph",
+      "text": "Prepared for: Drain Flow Sewer and Plumbing | 5543 Babette Ct, Oak Forest, IL 60452 | (773) 451-6767 | drainflowpro.com"
+    },
+    {
+      "type": "paragraph",
+      "text": "Prepared by: Entrepreneur Avenues (Digital Visibility Services) | Date: August 23, 2026. This report establishes a transparent baseline of the business's current online visibility and documents the optimization work completed on a rebuilt website. Re-running the same checks after launch will measure real improvement."
+    },
+    { "type": "pagebreak" },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "1. Executive Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "Drain Flow Sewer and Plumbing is a fourth-generation, family-run drain and sewer company serving all of Chicago and the surrounding suburbs. The business has a verified Google Business Profile (4.9-star rating, 55+ reviews) and an active Facebook page and YouTube channel. The previous website was a basic single-page site with no structured data, which limited how well search engines and AI assistants could understand and cite the business."
+    },
+    {
+      "type": "paragraph",
+      "text": "A fully rebuilt, multi-page website has been completed and reviewed. It adds structured data (schema) that helps Google and AI search engines identify the business, its services, service area, and hours — the foundation of local ranking and AI-assisted search (GEO). This report establishes an honest baseline so future results can be measured transparently."
+    },
+    { "type": "pagebreak" },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2. Business Profile (Verified Facts)"
+    },
+    {
+      "type": "table",
+      "header": ["Field", "Value"],
+      "rows": [
+        ["Business name", "Drain Flow Sewer and Plumbing"],
+        ["Address", "5543 Babette Ct, Oak Forest, IL 60452"],
+        ["Phone", "(773) 451-6767"],
+        ["Service area", "All of Chicago and surrounding suburbs"],
+        ["Google rating", "4.9 / 5 star"],
+        ["Google reviews", "55+ real reviews"],
+        ["Hours", "24/7 emergency availability"],
+        ["Website", "drainflowpro.com"],
+        ["Google Business Profile", "maps.app.goo.gl/XKjnzeQsQQ8GxNcz5"],
+        ["Facebook", "Drain Flow Sewer and Plumbing"],
+        ["YouTube", "@drainflowpro"]
+      ]
+    },
+    { "type": "pagebreak" },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3. Baseline Visibility Assessment"
+    },
+    {
+      "type": "paragraph",
+      "text": "This section reflects the business's standing as of August 23, 2026, before the rebuilt website goes live. Any cell marked 'to verify' is an honest gap we will confirm after launch with real browser searches — we do not report unverified rankings as fact."
+    },
+    {
+      "type": "table",
+      "header": ["Check", "Status", "Notes"],
+      "rows": [
+        ["Findable by name", "PASS", "Searching 'drain flow oak forest il' surfaces the business profile and site"],
+        ["Google Business Profile live", "PASS", "4.9 stars, 55+ reviews; maps link verified"],
+        ["Domain resolves (drainflowpro.com)", "PASS", "Live; returns HTTP 200"],
+        ["Brand on ambiguous term ('drainflow plumbing')", "NOT VISIBLE", "Other 'Drain Flow' businesses (CA, NY, AL, AU) rank instead; 27 per page — not our target"],
+        ["Local service-queries ranking", "TO VERIFY", "Check after launch in a real browser (results for 'near me' + service + Oak Forest/Chicago)"],
+        ["AI-assistant citations", "TO VERIFY", "Test ChatGPT/Perplexity/Gemini for drain/sewer answers citing the business"]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Targeted money queries (those a real customer types) include: drain cleaning near me, sewer backup repair oak forest, hydro jetting chicago, sewer camera inspection oak forest, emergency plumber oak forest, sump pump repair tinley park, backed-up basement floor drain chicago. Baseline positions for these will be logged the same day the site launches."
+    },
+    { "type": "pagebreak" },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4. Optimization Completed (Rebuilt Website)"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4.1 Pages"
+    },
+    {
+      "type": "paragraph",
+      "text": "The single-page site was rebuilt into 10 pages: Home, Services, About, Media, Reviews, Blog (3 articles), Contact, and a new FAQ page."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4.2 Structured Data (Schema)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Added schema.org markup so search engines and AI assistants can read the business cleanly:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Plumber / LocalBusiness schema on every page (NAP, hours, service area, services, rating); WebSite schema with publisher linkage; FAQPage schema on the FAQ page (auto-generated from visible content so it never drifts); BlogPosting schema on all 3 articles (author: Dwayne Rambo); sameAs entity links: Google Business Profile, Facebook, YouTube."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4.3 Technical SEO"
+    },
+    {
+      "type": "paragraph",
+      "text": "Technical SEO completed: unique descriptive titles and meta descriptions per page; per-page canonical URLs; Open Graph + Twitter Card meta; sitemap.xml listing all pages; robots.txt pointing to the sitemap; and a dedicated FAQ page with customer-rated Q&A content crafted to be cited by AI assistants."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4.4 Content & Honesty Standards"
+    },
+    {
+      "type": "paragraph",
+      "text": "Copy was aligned to the owner's direction: no pricing posted, no insurance/license detail, no fabricated testimonials, no invented statistics, and unsupported superlatives were removed. Only verified, real business facts are used. The FAQ reflects the owner's actual expertise (e.g., floor-drain water during rain indicating a backed-up sewer main)."
+    },
+    { "type": "pagebreak" },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "5. SEO & GEO Roadmap (Ongoing)"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5.1 Recommended Next Steps"
+    },
+    {
+      "type": "paragraph",
+      "text": "Recommended next steps going forward: Google Business Profile kept fully up to date with exact business name, address, and phone (NAP) plus the website link, hours, services, and real photos; consistent citations across Bing Places, Apple Business Connect, and local directories; regular honest blog content targeting service and area keywords; internal links between services, FAQ, blog, and contact pages; and post-launch logging of target-query rankings and AI-assistant citations, then a re-measurement to produce a comparison report."
+    },
+    { "type": "pagebreak" },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6. Measuring Results (Transparency)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Two to four weeks after the new site goes live, the same queries and checks in Section 3 will be re-run from a real browser. A follow-up report will compare against this baseline — page-by-page and query-by-query — so we can see honestly whether visibility improved. If a metric did not move, we report that too."
+    },
+    {
+      "type": "paragraph",
+      "text": "This baseline is deliberately conservative. No unverified rankings are claimed. Where the ranking is not yet visible or not yet checked, the report says so."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Prepared with honesty as the core principle: we report what is true, and we label unknown items as unknown."
+    }
+  ]
+}

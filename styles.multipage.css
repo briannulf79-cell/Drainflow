@@ -274,3 +274,27 @@
 @media (max-width: 480px) {
     .gallery-grid, .blog-grid { grid-template-columns: 1fr; }
 }
+/* ===== FAQ page ===== */
+.faq-item {
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    padding: 18px 0;
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-q {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 8px 0;
+}
+.faq-a {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.85);
+    margin: 0;
+    max-width: 760px;
+}
+.faq-a a { color: #ffd166; text-decoration: underline; }
+.faq-a strong { color: #fff; }
+@media (max-width: 640px) {
+    .faq-q { font-size: 1.05rem; }
+}
