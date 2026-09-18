@@ -770,6 +770,116 @@ h1 {
 }
 
 /* ========================================
+   FLOOD PREVENTION (services.html refactor)
+   Full-width header row + independent grid
+   ======================================== */
+.flood-header {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.flood-header-mascot {
+    display: flex;
+    justify-content: center;
+}
+
+.flood-header .flood-mascot {
+    width: clamp(220px, 72vw, 300px);
+    height: auto;
+    display: block;
+    margin-inline: auto;
+    border-width: 2px;
+}
+
+.flood-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.flood-grid .flood-service-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.flood-grid .flood-item-icon {
+    margin-bottom: 12px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    background: rgba(15, 20, 25, 0.55);
+    border: 1px solid var(--color-border);
+}
+
+.flood-grid .flood-item-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .flood-header .flood-mascot {
+        width: clamp(260px, 24vw, 360px);
+    }
+}
+
+@media (max-width: 768px) {
+    .flood-header {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .flood-grid {
+        grid-template-columns: 1fr;
+    }
+    .flood-grid .flood-item-icon,
+    .flood-grid .flood-item-icon img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+/* Emblem icons (icon-grid): fixed 80x80 desktop / 64x64 mobile */
+.icon-grid .service-icon {
+    padding: 0;
+    margin-bottom: 20px;
+    width: 84px;
+    height: 84px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-grid .service-icon img {
+    width: 80px;
+    height: 80px;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .icon-grid .service-icon {
+        width: 68px;
+        height: 68px;
+    }
+    .icon-grid .service-icon img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+/* ========================================
    ABOUT
    ======================================== */
 .about {
