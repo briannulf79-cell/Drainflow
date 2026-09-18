@@ -128,11 +128,18 @@
         .flood-header {
             display: grid;
             grid-template-columns: 1.4fr 0.6fr;
-            gap: 48px;
+            gap: 24px;
             align-items: center;
         }
+        .flood-header-mascot {
+            display: flex;
+            justify-content: center;
+        }
         .flood-header .flood-mascot {
-            max-width: 260px;
+            width: clamp(220px, 72vw, 300px);
+            height: auto;
+            display: block;
+            margin-inline: auto;
             border-width: 2px;
         }
         .flood-grid {
@@ -163,13 +170,15 @@
             object-fit: contain;
             display: block;
         }
-        @media (max-width: 900px) {
+        @media (min-width: 769px) {
+            .flood-header .flood-mascot {
+                width: clamp(260px, 24vw, 360px);
+            }
+        }
+        @media (max-width: 768px) {
             .flood-header {
                 grid-template-columns: 1fr;
                 gap: 24px;
-            }
-            .flood-header .flood-mascot {
-                max-width: 160px;
             }
             .flood-grid {
                 grid-template-columns: 1fr;
@@ -272,7 +281,7 @@
         <p class="section-subtitle" style="margin-left:auto;margin-right:auto;text-align:center;">Every service, explained. No guesswork — just the right specialist for the right problem.</p>
         <div class="services-grid">
             <div class="service-card">
-                <div class="service-icon"><img src="images/icons/icon-hydro-jetting.png" alt=""></div>
+                <div class="service-icon"><img src="images/icons/icon-hydro-jetting-v2.png" alt=""></div>
                 <h3>Hydro Jetting</h3>
                 <p>High-pressure water scours the inside of the pipe, clearing grease, roots, and buildup. A camera inspection confirms the condition of the line before we recommend it.</p>
             </div>
