@@ -21,7 +21,15 @@ Authoritative resume doc. Status: **approved direction, NOT yet live.**
    "Don't Dig Yet" section: side-by-side mascot-compare block — A) original Rooter 1.jfif with
    baked-in white bg, B) images/rooter-1-transparent.png (flood-fill knockout w/ 2px defringe +
    white decontamination; script tools/rooter1_knockout.py). Verified live: both load, B clean
-   on dark, no halo/shadow remnant. NEXT: Brian plays with B; if adopted, swap into the no-dig
+   on dark, no halo/shadow remnant. **v4 FIX (after Brian reported chunks erased all over):**
+   v3's global "enclosed pocket" clearing + loose flood threshold ate chrome plates/highlights
+   and leaked into the arm-torso shadow. v4 (tools/rooter1_knockout_v4.py): tight border flood
+   (sat<40 & mn>180), NO global enclosed clearing, only 4 SEEDED pocket floods (tube-vs-head,
+   tube-vs-elbow, spray gap, +1) with hard 3500px cap so artwork can never be eaten. Verified:
+   armor solid, both Brian pockets transparent, zero white fringe, ground shadow naturally
+   remains at feet (soft, looks fine). LESSON: never bulk-clear enclosed regions by color alone
+   on comic art — highlights are the same color as background; seed-target only. Live bytes
+   verified identical to local (33bd2ef). NEXT: Brian plays with B; if adopted, swap into the no-dig
    mascot spot on live home (and possibly build transparent versions of other Rooter jfifs). `_pages/home.html` arsenal cards → icon-grid
    emblems (hydro v2), rebuilt, live (6cf875f). Verified live: 6 icons loaded @80px, zero emoji.
    SITE ICON STATE: ALL service icon boxes on all pages are now emblems. Remaining emoji are ONLY
