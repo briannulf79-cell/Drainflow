@@ -17,6 +17,12 @@ Authoritative resume doc. Status: **approved direction, NOT yet live.**
   (icons_pipeline.py = crop→knockout→tile-render for all 6; make_preview.py = services.html swap).
 
 ## Pending / next session
+0b. **DONE (same day):** Full-Detail Arsenal icons now fixed 80x80 desktop / 64x64 mobile —
+   84px/68px `.service-icon` wrapper (padding 0, box-sizing border-box, flex-centered),
+   img fills wrapper with width/height 100% + object-fit:contain. Old 48px rule removed.
+   Verified: DOM measures all six img = 80px in 84px tile (mobile 64px), alpha-scan of all 6 PNGs
+   shows uniform ~92% fill (6-7px side margins) so visual size is consistent — no re-crop needed.
+   Live on preview (5946d93).
 0. **DONE (same day):** preview-page refactored per Brian's plan — Flood Prevention section is now a
    full-width header row (heading+copy left, Rooter mascot right, decorative) with an independent
    full-width 2x2 service grid below (80px icon tiles desktop / 64px mobile; emoji placeholders
