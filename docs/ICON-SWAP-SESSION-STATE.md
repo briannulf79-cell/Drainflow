@@ -16,7 +16,13 @@ Authoritative resume doc. Status: **approved direction, NOT yet live.**
 - Local files also at `~/projects/drainflow/images/icons/`; processing scripts saved in `tools/`
   (icons_pipeline.py = crop→knockout→tile-render for all 6; make_preview.py = services.html swap).
 
-0f. **DONE (same day): home page swapped too.** `_pages/home.html` arsenal cards → icon-grid
+0g. **DONE (same day): preview home mirror + mascot experiment.** icon-preview-home.html =
+   full mirror of index.html + [PREVIEW] banner + noindex/nofollow, live (44176bc). Under the
+   "Don't Dig Yet" section: side-by-side mascot-compare block — A) original Rooter 1.jfif with
+   baked-in white bg, B) images/rooter-1-transparent.png (flood-fill knockout w/ 2px defringe +
+   white decontamination; script tools/rooter1_knockout.py). Verified live: both load, B clean
+   on dark, no halo/shadow remnant. NEXT: Brian plays with B; if adopted, swap into the no-dig
+   mascot spot on live home (and possibly build transparent versions of other Rooter jfifs). `_pages/home.html` arsenal cards → icon-grid
    emblems (hydro v2), rebuilt, live (6cf875f). Verified live: 6 icons loaded @80px, zero emoji.
    SITE ICON STATE: ALL service icon boxes on all pages are now emblems. Remaining emoji are ONLY
    in the contact section, which Brian says is fine as-is. Icon swap project COMPLETE unless
