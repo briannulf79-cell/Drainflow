@@ -16,6 +16,15 @@ Authoritative resume doc. Status: **approved direction, NOT yet live.**
 - Local files also at `~/projects/drainflow/images/icons/`; processing scripts saved in `tools/`
   (icons_pipeline.py = crop→knockout→tile-render for all 6; make_preview.py = services.html swap).
 
+0e. **DONE (same day): LIVE SWAP.** drainflowpro.com/services.html now = preview layout:
+   partial `_pages/services.html` refactored (flood-header + flood-grid w/ 4 emblems, arsenal
+   grid classed `icon-grid` w/ 6 emblem imgs incl hydro v2), CSS moved from preview page into
+   styles.css (flood-header/flood-grid classes + `.icon-grid .service-icon` 80/64px — scoped so
+   index.html emoji cards unaffected). Rebuilt via build.py, pushed live/main aff8568. Verified
+   live: 4 flood icons + 6 arsenal icons, hydro-jetting-v2 loading, no emoji, no preview banner.
+   REMAINING: index.html home service cards still emoji; preview page still in repo (remove when
+   convenient).
+
 0d. **DONE (same day):** 4 flood/pump emoji tiles swapped for new shield emblems Rambo sent
    (Sep 18 cache: img_6e1a9376d33c=flood-control, img_9d991923ffc9=sump-pump,
    img_0919ddf93614=ejector-pumps, img_e28504618a6a=backflow-prevention), processed 320x320
