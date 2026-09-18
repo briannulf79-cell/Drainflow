@@ -16,7 +16,11 @@ Authoritative resume doc. Status: **approved direction, NOT yet live.**
 - Local files also at `~/projects/drainflow/images/icons/`; processing scripts saved in `tools/`
   (icons_pipeline.py = crop→knockout→tile-render for all 6; make_preview.py = services.html swap).
 
-0e. **DONE (same day): LIVE SWAP.** drainflowpro.com/services.html now = preview layout:
+0f. **DONE (same day): home page swapped too.** `_pages/home.html` arsenal cards → icon-grid
+   emblems (hydro v2), rebuilt, live (6cf875f). Verified live: 6 icons loaded @80px, zero emoji.
+   SITE ICON STATE: ALL service icon boxes on all pages are now emblems. Remaining emoji are ONLY
+   in the contact section, which Brian says is fine as-is. Icon swap project COMPLETE unless
+   Brian wants the contact emoji changed later. drainflowpro.com/services.html now = preview layout:
    partial `_pages/services.html` refactored (flood-header + flood-grid w/ 4 emblems, arsenal
    grid classed `icon-grid` w/ 6 emblem imgs incl hydro v2), CSS moved from preview page into
    styles.css (flood-header/flood-grid classes + `.icon-grid .service-icon` 80/64px — scoped so
