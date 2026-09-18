@@ -17,6 +17,11 @@ Authoritative resume doc. Status: **approved direction, NOT yet live.**
   (icons_pipeline.py = crop→knockout→tile-render for all 6; make_preview.py = services.html swap).
 
 ## Pending / next session
+0. **DONE (same day):** preview-page refactored per Brian's plan — Flood Prevention section is now a
+   full-width header row (heading+copy left, Rooter mascot right, decorative) with an independent
+   full-width 2x2 service grid below (80px icon tiles desktop / 64px mobile; emoji placeholders
+   sized ready for custom artwork swap). Verified desktop+mobile screenshots, pushed to live/main
+   (0c9332b) and confirmed live. Full-Detail Arsenal layout untouched; live services.html untouched.
 1. **Brian has a REFACTORING PLAN for the preview page** — get it first, apply before any live swap.
 2. Rambo may replace the hydro-jetting emblem (he's remaking it; remade image sent but not yet processed).
 3. Brian said there are **4 more emoji needing swapped** (likely on other pages — grep all pages for
