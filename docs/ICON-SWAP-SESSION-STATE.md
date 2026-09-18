@@ -17,6 +17,14 @@ Authoritative resume doc. Status: **approved direction, NOT yet live.**
   (icons_pipeline.py = crop→knockout→tile-render for all 6; make_preview.py = services.html swap).
 
 ## Pending / next session
+0c. **DONE (same day, per ChatGPT-suggested plan):** (1) Hydro Jetting v2 — Rambo's revised badge
+   (viewed down the pipe mouth, nozzle inside, matches camera badge composition) found in
+   ~/.hermes/cache/images/img_956569f87afb.jpg (1254x1254, sent 22:58 Sep 17), processed via
+   icons_pipeline.process() → images/icons/icon-hydro-jetting-v2.png at 320x320 transparent.
+   NEW FILENAME (cache-bust); preview page references -v2; old side-view PNG kept for reference.
+   (2) Rooter mascot mobile-first: width clamp(220px,72vw,300px) default, clamp(260px,24vw,360px)
+   at ≥769px, centered, header gap 48→24px, mobile header stacks at ≤768px breakpoint now.
+   Verified live: hydroV2 loads (natural 320), mascot 307px @1440 / 281px @390. Commit 256fdf7.
 0b. **DONE (same day):** Full-Detail Arsenal icons now fixed 80x80 desktop / 64x64 mobile —
    84px/68px `.service-icon` wrapper (padding 0, box-sizing border-box, flex-centered),
    img fills wrapper with width/height 100% + object-fit:contain. Old 48px rule removed.
