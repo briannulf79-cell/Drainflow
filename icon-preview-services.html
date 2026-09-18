@@ -93,7 +93,65 @@
 <style>
 .service-icon img { width: 48px; height: 48px; display: block; }
 .preview-banner { background:#22cc00; color:#06110a; text-align:center; padding:8px; font-weight:700; }
-</style></head>
+</style>    <style>
+        /* PREVIEW-ONLY: refactored Flood Prevention layout (not on live pages) */
+        .flood-header {
+            display: grid;
+            grid-template-columns: 1.4fr 0.6fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .flood-header .flood-mascot {
+            max-width: 260px;
+            border-width: 2px;
+        }
+        .flood-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 40px;
+        }
+        .flood-grid .flood-service-item {
+            display: flex;
+            flex-direction: column;
+        }
+        .flood-grid .flood-item-icon {
+            margin-bottom: 12px;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            border-radius: var(--radius-md);
+            background: rgba(15, 20, 25, 0.55);
+            border: 1px solid var(--color-border);
+        }
+        .flood-grid .flood-item-icon img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            display: block;
+        }
+        @media (max-width: 900px) {
+            .flood-header {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .flood-header .flood-mascot {
+                max-width: 160px;
+            }
+            .flood-grid {
+                grid-template-columns: 1fr;
+            }
+            .flood-grid .flood-item-icon,
+            .flood-grid .flood-item-icon img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+    </style>
+</head>
 <body><div class="preview-banner">PREVIEW — new service icons (not live)</div>
     <!-- Persistent Parallax Background (shared across all pages) -->
     <div class="site-bg">
@@ -140,36 +198,38 @@
     </div>
 </section>
 
-<!-- Flood Prevention & Pump Systems -->
+<!-- Flood Prevention & Pump Systems (preview refactor: full-width header + independent 2x2 grid) -->
 <section class="page-section">
-    <div class="container flood-content" style="grid-template-columns:1fr 1.2fr;">
-        <div class="flood-image">
-            <img src="images/Rooter 2.jfif" alt="Rooter — Flood Defense Specialist" class="flood-mascot">
+    <div class="container">
+        <div class="flood-header">
+            <div class="flood-header-text">
+                <h2 class="section-title">Flood Prevention<br>& Pump Systems</h2>
+                <p class="section-subtitle" style="margin-left:0;">Don't wait for the flood. Protect your home with professional-grade systems.</p>
+            </div>
+            <div class="flood-header-mascot">
+                <img src="images/Rooter 2.jfif" alt="Rooter — Flood Defense Specialist" class="flood-mascot">
+            </div>
         </div>
-        <div class="flood-text">
-            <h2 class="section-title">Flood Prevention<br>& Pump Systems</h2>
-            <p class="section-subtitle" style="margin-left:0;">Don't wait for the flood. Protect your home with professional-grade systems.</p>
-            <div class="flood-services">
-                <div class="flood-service-item">
-                    <span class="flood-item-icon">🌊</span>
-                    <h4>Flood Control Systems</h4>
-                    <p>Complete flood prevention installation and maintenance to keep your basement dry.</p>
-                </div>
-                <div class="flood-service-item">
-                    <span class="flood-item-icon">⬆️</span>
-                    <h4>Sump Pump Systems</h4>
-                    <p>Installation, repair, and replacement of sump pumps. Battery backup options for power outages.</p>
-                </div>
-                <div class="flood-service-item">
-                    <span class="flood-item-icon">♻️</span>
-                    <h4>Ejector Pumps</h4>
-                    <p>Professional ejector pump installation and service for below-grade plumbing systems.</p>
-                </div>
-                <div class="flood-service-item">
-                    <span class="flood-item-icon">🔒</span>
-                    <h4>Backflow Prevention</h4>
-                    <p>Backflow valve installation to protect your home from sewer backup during heavy storms.</p>
-                </div>
+        <div class="flood-grid">
+            <div class="flood-service-item">
+                <span class="flood-item-icon">🌊</span>
+                <h4>Flood Control Systems</h4>
+                <p>Complete flood prevention installation and maintenance to keep your basement dry.</p>
+            </div>
+            <div class="flood-service-item">
+                <span class="flood-item-icon">⬆️</span>
+                <h4>Sump Pump Systems</h4>
+                <p>Installation, repair, and replacement of sump pumps. Battery backup options for power outages.</p>
+            </div>
+            <div class="flood-service-item">
+                <span class="flood-item-icon">♻️</span>
+                <h4>Ejector Pumps</h4>
+                <p>Professional ejector pump installation and service for below-grade plumbing systems.</p>
+            </div>
+            <div class="flood-service-item">
+                <span class="flood-item-icon">🔒</span>
+                <h4>Backflow Prevention</h4>
+                <p>Backflow valve installation to protect your home from sewer backup during heavy storms.</p>
             </div>
         </div>
     </div>
