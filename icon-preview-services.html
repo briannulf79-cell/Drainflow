@@ -91,7 +91,37 @@
     }
     </script>
 <style>
-.service-icon img { width: 48px; height: 48px; display: block; }
+/* PREVIEW-ONLY: Full-Detail Arsenal icons at fixed 80x80 (64x64 mobile) */
+.service-icon {
+    padding: 0;
+    margin-bottom: 20px;
+    width: 84px;
+    height: 84px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-icon img {
+    width: 80px;
+    height: 80px;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+    display: block;
+}
+@media (max-width: 900px) {
+    .service-icon {
+        width: 68px;
+        height: 68px;
+    }
+    .service-icon img {
+        width: 64px;
+        height: 64px;
+    }
+}
 .preview-banner { background:#22cc00; color:#06110a; text-align:center; padding:8px; font-weight:700; }
 </style>    <style>
         /* PREVIEW-ONLY: refactored Flood Prevention layout (not on live pages) */
