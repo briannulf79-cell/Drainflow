@@ -16,7 +16,11 @@ Authoritative resume doc. Status: **approved direction, NOT yet live.**
 - Local files also at `~/projects/drainflow/images/icons/`; processing scripts saved in `tools/`
   (icons_pipeline.py = crop→knockout→tile-render for all 6; make_preview.py = services.html swap).
 
-## Pending / next session
+0d. **DONE (same day):** 4 flood/pump emoji tiles swapped for new shield emblems Rambo sent
+   (Sep 18 cache: img_6e1a9376d33c=flood-control, img_9d991923ffc9=sump-pump,
+   img_0919ddf93614=ejector-pumps, img_e28504618a6a=backflow-prevention), processed 320x320
+   transparent → images/icons/icon-{flood-control,sump-pump,ejector-pumps,backflow-prevention}.png.
+   Preview flood-grid now full emblem set; verified live loading (commit 959e3a1).
 0c. **DONE (same day, per ChatGPT-suggested plan):** (1) Hydro Jetting v2 — Rambo's revised badge
    (viewed down the pipe mouth, nozzle inside, matches camera badge composition) found in
    ~/.hermes/cache/images/img_956569f87afb.jpg (1254x1254, sent 22:58 Sep 17), processed via
