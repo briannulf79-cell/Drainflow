@@ -29,7 +29,14 @@ Authoritative resume doc. Status: **approved direction, NOT yet live.**
    armor solid, both Brian pockets transparent, zero white fringe, ground shadow naturally
    remains at feet (soft, looks fine). LESSON: never bulk-clear enclosed regions by color alone
    on comic art — highlights are the same color as background; seed-target only. Live bytes
-   verified identical to local (33bd2ef). NEXT: Brian plays with B; if adopted, swap into the no-dig
+   verified identical to local (33bd2ef). **v5 (same day):** preview page cleaned per Brian —
+   comparison block removed, transparent mascot now in the actual no-dig slot (pure sticker,
+   no border/haze), canonical REMOVED + og:url/og:image pointed at the preview page itself
+   (e2a6aa2). ROOT CAUSE of Brian's Telegram share showing the live homepage: the preview page
+   carried the homepage's canonical + og:url tags, so Telegram's link preview resolved to the
+   real home. Lesson: preview mirrors must not inherit the canonical of the page they mirror.
+   NEXT: Brian shares with Rambo for mascot call; if adopted, swap transparent mascot into
+   _pages/home.html no-dig section + rebuild. NEXT: Brian plays with B; if adopted, swap into the no-dig
    mascot spot on live home (and possibly build transparent versions of other Rooter jfifs). `_pages/home.html` arsenal cards → icon-grid
    emblems (hydro v2), rebuilt, live (6cf875f). Verified live: 6 icons loaded @80px, zero emoji.
    SITE ICON STATE: ALL service icon boxes on all pages are now emblems. Remaining emoji are ONLY
