@@ -1,3 +1,12 @@
+## PROJECT CLOSED (2026-09-18, same day): FINAL swap done (c9eeaa8 / 10a6a20).
+   - `_pages/home.html` no-dig mascot = images/rooter-1-transparent.png; rebuilt via build.py;
+     live home verified (transparent ref in, Rooter 1.jfif ref gone). Rooter 1.jfif kept in
+     images/ as source-of-truth but no longer referenced by any page.
+   - BOTH preview pages DELETED from repo + live (icon-preview-home.html,
+     icon-preview-services.html -> 404 verified). Site root back to drainflowpro.com only.
+   - Site icon/mascot work COMPLETE. Remaining emoji: contact section only (Brian OK as-is).
+   - If resurrecting: knockout scripts in tools/ (rooter1_knockout_v4.py is the good one),
+     original Rooter 1.jfif untouched in images/.
 # DRAIN FLOW SERVICE ICONS — SESSION STATE (2026-09-18)
 
 Authoritative resume doc. Status: **approved direction, NOT yet live.**
